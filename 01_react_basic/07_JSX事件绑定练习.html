@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./lib/react.js"></script>
+    <script src="./lib/react-dom.js"></script>
+    <script src="./lib/babel.js"></script>
+
+    <script type="text/babel">
+      const root = ReactDOM.createRoot(document.querySelector("#root"));
+
+      let clickCount = 0;
+      const colors = [
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "blue",
+        "indigo",
+        "violet",
+      ];
+      let colorIndex = 0;
+
+      const handleClick = () => {
+        clickCount++;
+        colorIndex = clickCount % colors.length; // 循环颜色
+        rootRender();
+      };
+
+      const rootRender = () => {
+        const messageStyle = {
+          color: colors[colorIndex],
+        };
+
+        const achievementMessage =
+          clickCount > 10 ? (
+            <div style={{ marginTop: "10px", color: "gold" }}>
+              👏 你已经获得成就！👏
+            </div>
+          ) : null;
+
+        root.render(
+          <div>
+            <h2 style={messageStyle}>你已经点击了 {clickCount} 次</h2>
+            <button onClick={handleClick}>🌈 修改文本</button>
+            {achievementMessage}
+          </div>
+        );
+      };
+
+      rootRender();
+    </script>
+  </body>
+</html>
