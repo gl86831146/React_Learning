@@ -1,0 +1,141 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* nav {
+  padding: 1rem;
+  background: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+nav a {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #e9ecef;
+}
+
+nav a.active {
+  background: green;
+  color: white;
+}
+
+div.page-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+nav.sub-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem 0;
+}
+
+nav.sub-nav a {
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+  padding: 0.3rem 1.2rem;
+}
+
+.profile-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-nav {
+  width: 20%; /* 根据需要调整宽度 */
+  padding-right: 2rem; /* 右边距 */
+}
+
+.content-area {
+  width: 80%; /* 根据需要调整宽度 */
+}
+
+page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.blog-detail {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.blog-detail {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+nav a {
+  color: #666;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+/* 激活状态样式 */
+nav a.active {
+  color: #1890ff;
+  background-color: #e6f7ff;
+}
+
+/* 鼠标悬停效果 */
+nav a:hover:not(.active) {
+  background-color: #f5f5f5;
+}
