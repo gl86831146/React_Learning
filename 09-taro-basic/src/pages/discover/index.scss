@@ -1,0 +1,17 @@
+.discover {
+  padding: 20px;
+
+  .feature-item {
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+
+    &:active {
+      background: #f5f5f5;
+    }
+  }
+}

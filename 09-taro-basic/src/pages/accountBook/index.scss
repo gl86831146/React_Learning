@@ -1,0 +1,64 @@
+.account-book {
+  padding: 20px;
+
+  .input-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    Input {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .type-selector {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+
+      Button {
+        flex: 1;
+        
+        &.active {
+          background: #007AFF;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .balance-section {
+    background: #007AFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    .balance-text {
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .records-list {
+    .record-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      background: #fff;
+      margin-bottom: 10px;
+      border-radius: 5px;
+
+      &.income {
+        border-left: 4px solid #4CD964;
+      }
+
+      &.expense {
+        border-left: 4px solid #FF3B30;
+      }
+    }
+  }
+}
