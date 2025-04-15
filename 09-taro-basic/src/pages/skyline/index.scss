@@ -1,0 +1,109 @@
+.skyline-page {
+  padding: 20px;
+
+  .section {
+    margin-bottom: 30px;
+
+    .section-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+
+  // 手势容器样式
+  .gesture-container {
+    height: 200px;
+    background: #f0f0f0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .gesture-text {
+      font-size: 28px;
+      color: #666;
+    }
+
+    &:active {
+      background: #e0e0e0;
+    }
+  }
+
+  // 吸顶布局样式
+  .scroll-container {
+    background: #f5f5f5;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .sticky-header {
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+    .sub-title {
+      margin-top: 10px;
+      font-size: 24px;
+      color: #666;
+    }
+  }
+
+  .sticky-content {
+    .sticky-item {
+      padding: 20px;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      font-size: 28px;
+    }
+  }
+
+  // 原有的 GridView 样式保持不变
+  .grid-view {
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+
+    .grid-item {
+      height: 160px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .grid-item-text {
+        color: #fff;
+        font-size: 32px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  // 原有的 ListView 样式保持不变
+  .list-view {
+    background: #f5f5f5;
+    border-radius: 12px;
+    padding: 10px;
+
+    .list-item {
+      padding: 15px;
+      background-color: #fff;
+      margin-bottom: 1px;
+
+      .list-item-title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .list-item-desc {
+        font-size: 28px;
+        color: #666;
+      }
+    }
+  }
+
+}
